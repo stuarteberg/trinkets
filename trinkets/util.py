@@ -4,7 +4,6 @@ import sys
 import copy
 import time
 import json
-import vigra
 import logging
 import inspect
 import contextlib
@@ -482,6 +481,8 @@ def closest_approach_between_masks(mask_a, mask_b):
     which mark the two objects' closest approach, i.e. where the objects
     come closest to touching, even if they don't actually touch.
     """
+    import vigra
+
     # Wrapper function just for visibility to profilers
     def vectorDistanceTransform():
         return vigra.filters.vectorDistanceTransform(mask_b.astype(np.uint32))

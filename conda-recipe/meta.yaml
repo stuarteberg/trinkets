@@ -25,22 +25,18 @@ requirements:
   run:
     - python {{ python }}*
     - requests
-    - flask >=1.0
     - numpy >=1.13
-    - h5py
     - pandas
     - numba >=0.45
-    - vigra
-    - nifty
-    - libdvid-cpp >=0.3.post83
-    - dvidutils >=0.0.post81
     - tqdm
     - ujson
-    - pykafka
     - networkx >=2.1
-    - asciitree
-    - protobuf
-    #- graph-tool  <-- Optional dependency. Install to your own conda env if desired (but check the license).
+    - dvidutils >=0.0.post81 # from channel: flyem-forge
+
+    # Optional dependencies.
+    # Install to your own conda env if desired (but check the license).
+    # - vigra
+    # - graph-tool  <-- GPLv3
 
 test:
   requires:
