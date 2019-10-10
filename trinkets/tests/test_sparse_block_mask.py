@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 
-from neuclease.util import Grid, SparseBlockMask, upsample
+from trinkets import Grid, SparseBlockMask, upsample
 
 def test_get_fullres_mask():
     coarse_mask = np.random.randint(2, size=(10,10), dtype=bool)
@@ -86,4 +86,4 @@ def test_sparse_boxes_WITH_OFFSET():
 
     
 if __name__ == "__main__":
-    pytest.main(['-s', '--tb=native', '--pyargs', 'neuclease.tests.test_sparse_block_mask'])
+    pytest.main(['-s', '--tb=native', '--pyargs', 'trinkets.tests.test_sparse_block_mask'])

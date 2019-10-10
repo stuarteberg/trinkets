@@ -1,6 +1,6 @@
 import pytest
 import numpy as np
-from neuclease.util import Grid, boxes_from_grid, slabs_from_box
+from trinkets import Grid, boxes_from_grid, slabs_from_box
 
 
 def test_boxes_from_grid_0():
@@ -80,4 +80,4 @@ def test_slabs_for_box_scaled_nonaligned_round_in():
 
 
 if __name__ == "__main__":
-    pytest.main(['-s', '--tb=native', '--pyargs', 'neuclease.tests.test_grid'])
+    pytest.main(['-s', '--tb=native', '--pyargs', 'trinkets.tests.test_grid'])

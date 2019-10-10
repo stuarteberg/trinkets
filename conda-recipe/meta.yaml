@@ -1,5 +1,5 @@
 package:
-    name: neuclease
+    name: trinkets
 
   # If we're using a non-tagged revision, append '.postN' to the version
   {% if GIT_DESCRIBE_NUMBER|int != 0 %}
@@ -45,16 +45,14 @@ requirements:
 test:
   requires:
     - pytest
-    - dvid >=dvid-0.8.24
-    - libdvid-cpp
 
   imports:
-    - neuclease
+    - trinkets
 
   commands:
-    - pytest -s --tb=native --pyargs neuclease.tests
+    - pytest -s --tb=native --pyargs trinkets.tests
 
 about:
-  home: https://github.com/janelia-flyem/neuclease
+  home: https://github.com/janelia-flyem/trinkets
   license: BSD (3-clause)
-  summary: Tools for computing interactive "cleaves" of agglomerated neuron fragments from a DVID server.
+  summary: Knick-knacks for Python collectors

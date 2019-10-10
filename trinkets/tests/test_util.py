@@ -5,10 +5,10 @@ from tempfile import TemporaryFile
 
 import pytest
 import numpy as np
-from neuclease.util import (uuids_match, read_csv_header, read_csv_col, connected_components,
-                            connected_components_nonconsecutive, graph_tool_available,
-                            closest_approach, approximate_closest_approach, upsample, is_lexsorted, lexsort_columns,
-                            lexsort_inplace, gen_json_objects, ndrange, compute_parallel)
+from trinkets import (uuids_match, read_csv_header, read_csv_col, connected_components,
+                      connected_components_nonconsecutive, graph_tool_available,
+                      closest_approach, approximate_closest_approach, upsample, is_lexsorted, lexsort_columns,
+                      lexsort_inplace, gen_json_objects, ndrange, compute_parallel)
 
 def test_uuids_match():
     assert uuids_match('abcd', 'abcdef') == True
@@ -350,4 +350,4 @@ def test_compute_parallel():
 
 
 if __name__ == "__main__":
-    pytest.main(['-s', '--tb=native', '--pyargs', 'neuclease.tests.test_util'])
+    pytest.main(['-s', '--tb=native', '--pyargs', 'trinkets.tests.test_util'])

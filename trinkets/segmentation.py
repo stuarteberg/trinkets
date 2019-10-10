@@ -213,7 +213,7 @@ def split_disconnected_bodies(labels_orig):
     
     Note:
         Requires scikit-image (which, currently, is not otherwise
-        listed as a dependency of neuclease's conda-recipe).
+        listed as a dependency of trinkets' conda-recipe).
 
     Args:
         labels_orig (numpy.array): 3D array of labels

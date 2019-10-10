@@ -7,7 +7,7 @@ before_cache:
   # Don't cache build artifacts, or any metadata files that changed in the conda prefix
   - rm -rf /home/travis/miniconda/conda-bld
   - conda clean --lock --index-cache
-  - rm -rf /home/travis/miniconda/pkgs/neuclease*
+  - rm -rf /home/travis/miniconda/pkgs/trinkets*
   - rm -rf /home/travis/miniconda/pkgs/urls.txt
   - rm -rf /home/travis/miniconda/locks
 
